@@ -1,0 +1,50 @@
+html {
+  font-size: 100%;
+  @include breakpoint(tablet) {
+    font-size: 95%;
+  }
+  @include breakpoint(tablet) {
+    font-size: 90%;
+  }
+  * {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: $bodyfont;
+  }
+}
+main {
+  padding: 3rem 1.5rem;
+}
+
+h1 {
+  font-family: $headerfont;
+}
+h2 {
+  font-family: $headerfont;
+}
+h3 {
+  font-size: 1.7rem;
+  margin-bottom: .7rem;
+  font-family: $headerfont;
+}
+p {
+  font-size: .9rem;
+  color: $darkishgray;
+}
+
+.read-more-cta {
+  background: $black;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: .7rem 1.5rem;
+  border-radius: 20px;
+  font-size: .8rem;
+  letter-spacing: 2px;
+  display: inline-block;
+  transition: .3s ease-in-out;
+  &:hover {
+    background: $red;
+  }
+}
